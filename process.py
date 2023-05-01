@@ -26,13 +26,12 @@ def insert_csv_to_table(table_name, csv_name):
             for sm in row[1].split(', '):
                 sm_version = sm[3:]
                 data.append((pytorch_version, python_version, cuda_version, cudnn_version, sm_version))
-            print(data)
-            cur.executemany(f"""
-                INSERT INTO {table_name} VALUES
-                    (?, ?, ?, ?, ?)
-            """, data)
-    
-    conn.commit()
+        cur.executemany(f"""
+            INSERT INTO {table_name} VALUES
+                (?, ?, ?, ?, ?)
+        """, data)
+        
+        conn.commit()
     
 if __name__=='__main__':
     create_table('pytorch')

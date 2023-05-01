@@ -15,3 +15,8 @@ tabulate==0.8.9
 tomli==1.2.1
 tqdm==4.62.0
 natsort==8.2.0
+streamlit==1.22.0
+matplotlib==3.4.2
+cycler>=0.1.0
+kiwisolver>=1.0.1
+pyparsing>=2.2.1
