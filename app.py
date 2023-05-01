@@ -7,8 +7,10 @@ import natsort
 
 conn = sqlite3.connect('version.db')
 
-st.sidebar.title('PyTorch (on Linux64) Installation Environment Selection')
-
+st.set_page_config(
+    page_title='PyTorch (on Linux64) Installation Environment Selection',
+    page_icon='🖐'
+)
 pytorch_versions = ['null',
     '1.0.0', '1.0.1', '1.1.0', '1.2.0', '1.2.0+cu92', '1.3.0', '1.3.1', '1.4.0', '1.5.0', '1.5.1', 
     '1.6.0', '1.7.0', '1.7.1', '1.8.0', '1.8.1', '1.9.0', '1.9.1', '1.10.0', '1.10.1', '1.10.2',
