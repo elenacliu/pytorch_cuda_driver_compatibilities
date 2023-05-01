@@ -1,11 +1,15 @@
-# Compute Capabilities of each PyTorch Package
+# PyTorch (on Linux64) Installation Environment Selection
 
 The project is a utility tool for PyTorch installation on Linux64 machine.
 
-Checks the compute capabalities of each pytorch package in the [PyTorch conda channel](https://anaconda.org/pytorch) by running `cuobjdump` from the [CUDA Toolkit](https://docs.nvidia.com/cuda/) on the included `*.so` files.
+## Compute Capabilities of each PyTorch Package
+`pytorch_compute_capabilities.py` checks the compute capabalities of each pytorch package in the [PyTorch conda channel](https://anaconda.org/pytorch) by running `cuobjdump` from the [CUDA Toolkit](https://docs.nvidia.com/cuda/) on the included `*.so` files.
 
-For results see [table.md](table.md).
+For results see [table.csv](table.csv).
 
+## Start Web Service for Environment Selection
+
+Run `streamlit run app.py` in your terminal.
 
 # References
 
