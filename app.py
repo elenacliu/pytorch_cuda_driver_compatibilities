@@ -23,16 +23,12 @@ st.markdown('## Please select the software version and/or compute capability of 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     option_pytorch = st.selectbox(label='PyTorch Version', options=pytorch_versions)
-    st.write(option_pytorch)
 with col2:
     option_python = st.selectbox(label='Python Version', options=python_versions)
-    st.write(option_python)
 with col3:
     option_cuda = st.selectbox(label='CUDAToolkit Version', options=cuda_versions)
-    st.write(option_cuda)
 with col4:
     option_sm = st.selectbox(label='SM Version', options=sm_versions)
-    st.write(option_sm)
 
 def main():
     cur = conn.cursor()
@@ -55,8 +51,6 @@ def main():
     if cond != '':
         sql = sql + ' WHERE ' + cond[4:]
     cur = cur.execute(sql, data)
-
-    st.write('pytorch python cuda cudnn sm')
 
     df = pd.DataFrame(cur.fetchall(), columns=['PyTorch', 'Python', 'CUDA', 'cuDNN', 'SM'])
     df = df.sort_values(by=['PyTorch', 'Python', 'CUDA', 'cuDNN', 'SM'], ignore_index=True, key=natsort.natsort_keygen(alg=natsort.ns.LOCALEALPHA))
