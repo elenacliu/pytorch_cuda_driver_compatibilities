@@ -2,6 +2,8 @@ import sqlite3
 import streamlit as st
 import pandas as pd
 import natsort
+import locale
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 conn = sqlite3.connect('version.db')
 
