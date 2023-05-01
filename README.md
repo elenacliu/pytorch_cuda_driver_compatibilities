@@ -15,6 +15,12 @@ Run `streamlit run app.py` in your terminal, or you can visit [this web page](ht
 
 Just select the PyTorch (or Python or CUDA) version or compute capability you have, the page will give you the available combinations. 
 
+For example, if you want to install PyTorch v1.7.1 through conda, Python of your conda environment is v3.8 and the GPU you use is Tesla V100, then you can choose the following option to see the environment constraints.
+
+![page](./page.png)
+
+If there is no output, that means your needs *possibly* cannot be satisfied.
+
 # Acknowledgement
 
 This repo is inherited from [https://github.com/moi90/pytorch_compute_capabilities](https://github.com/moi90/pytorch_compute_capabilities) of [Simon-Martin Schröder](https://github.com/moi90). I reuse the code `pytorch_compuute_capabilities.py` to collect version constraints.
@@ -28,5 +34,7 @@ Here are some great resources that provide insight into compatibility of cuda:
 [https://jia.je/software/2021/12/26/nvidia-cuda/](https://jia.je/software/2021/12/26/nvidia-cuda/)
 
 [https://jia.je/software/2022/07/06/install-nvidia-cuda/](https://jia.je/software/2022/07/06/install-nvidia-cuda/)
+
+[https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
 
 [https://github.com/moi90/pytorch_compute_capabilities](https://github.com/moi90/pytorch_compute_capabilities)
