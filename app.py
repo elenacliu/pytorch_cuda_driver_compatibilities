@@ -54,10 +54,8 @@ def main():
         sql = sql + ' WHERE ' + cond[4:]
     cur = cur.execute(sql, data)
 
-    df = pd.DataFrame(cur.fetchall(), columns=['PyTorch', 'Python', 'CUDA', 'cuDNN', 'SM'])
-    df = df.sort_values(by=['PyTorch', 'Python', 'CUDA', 'cuDNN', 'SM'], ignore_index=True, key=natsort.natsort_keygen(alg=natsort.ns.LOCALEALPHA))
-    # for tup in cur.fetchall()[:20]:
-    # return cur.fetchall()
+    df = pd.DataFrame(cur.fetchall(), columns=['PyTorch', 'Python', 'CUDA', 'cuDNN', 'SM', 'driver>='])
+    df = df.sort_values(by=['PyTorch', 'Python', 'CUDA', 'cuDNN', 'SM', 'driver>='], ignore_index=True, key=natsort.natsort_keygen(alg=natsort.ns.LOCALEALPHA))
     st.table(df)
 
 

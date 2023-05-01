@@ -11,6 +11,8 @@ For results see [table.csv](table.csv).
 
 Run `streamlit run app.py` in your terminal.
 
+You can 
+
 # References
 
 Here are some great resources that provide insight into compatibility of cuda:
