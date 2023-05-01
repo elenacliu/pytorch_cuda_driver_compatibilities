@@ -23,7 +23,7 @@ If there is no output, that means your needs *possibly* cannot be satisfied.
 
 # Acknowledgement
 
-This repo is inherited from [https://github.com/moi90/pytorch_compute_capabilities](https://github.com/moi90/pytorch_compute_capabilities) of [Simon-Martin Schröder](https://github.com/moi90). I reuse the code `pytorch_compuute_capabilities.py` to collect version constraints.
+This repo is inherited from [https://github.com/moi90/pytorch_compute_capabilities](https://github.com/moi90/pytorch_compute_capabilities) of [Simon-Martin Schröder](https://github.com/moi90). I reuse the code `pytorch_compute_capabilities.py` to collect version constraints.
 
 # References
 
