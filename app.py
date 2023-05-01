@@ -40,6 +40,10 @@ with col4:
     option_sm = st.selectbox(label='SM Version', options=sm_versions)
 st.markdown('`null` means no contraint on corresponding option.')
 def main():
+    if option_pytorch not in pytorch_versions or option_cuda not in cuda_versions or option_python not in python_versions or option_sm not in sm_versions:
+        st.error('Please enter valid version')
+        return
+
     cur = conn.cursor()
 
     sql = 'SELECT * FROM pytorch'
