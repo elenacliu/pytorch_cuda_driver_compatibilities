@@ -9,9 +9,15 @@ For results see [table.csv](table.csv).
 
 ## Start Web Service for Environment Selection
 
-Run `streamlit run app.py` in your terminal.
+Run `streamlit run app.py` in your terminal, or you can visit [this web page](https://elenacliu-pytorch-cuda-driver.streamlit.app/).
 
-You can 
+### Usage
+
+Just select the PyTorch (or Python or CUDA) version or compute capability you have, the page will give you the available combinations. 
+
+# Acknowledgement
+
+This repo is inherited from [https://github.com/moi90/pytorch_compute_capabilities](https://github.com/moi90/pytorch_compute_capabilities) of [Simon-Martin Schröder](https://github.com/moi90). I reuse the code `pytorch_compuute_capabilities.py` to collect version constraints.
 
 # References
 

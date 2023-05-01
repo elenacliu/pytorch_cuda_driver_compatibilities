@@ -21,7 +21,7 @@ cuda_versions = ['null',
                 '10.0', '10.1', '10.2', 
                 '11.0', '11.1', '11.3', '11.5', '11.6', '11.7', '11.8']
 sm_versions = ['null', 'sm_20', 'sm_35', 'sm_37', 'sm_50', 'sm_60', 'sm_61', 'sm_70', 'sm_75', 'sm_80', 'sm_86', 'sm_90']
-st.markdown('### Please select the software version and/or compute capability of your NVIDIA GPU')
+st.markdown('### Please select the software version and/or compute capability of your NVIDIA GPU (On Linux64)')
 st.info('The environment settings are collected from https://conda.anaconda.org/pytorch/linux-64/ \
         and https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#major-components, \
         so other settings may also work.', icon="👋")
