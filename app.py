@@ -38,7 +38,7 @@ with col3:
     option_cuda = st.selectbox(label='CUDAToolkit Version', options=cuda_versions)
 with col4:
     option_sm = st.selectbox(label='SM Version', options=sm_versions)
-
+st.markdown('`null` means no contraint on corresponding option.')
 def main():
     cur = conn.cursor()
 
