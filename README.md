@@ -1,5 +1,7 @@
 # PyTorch (on Linux64) Installation Environment Selection
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://elenacliu-pytorch-cuda-driver.streamlit.app)
+
 The project is a utility tool for PyTorch installation on Linux64 machine.
 
 ## Compute Capabilities of each PyTorch Package
