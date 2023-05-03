@@ -23,6 +23,8 @@ For example, if you want to install PyTorch v1.7.1 through conda, Python of your
 
 If there is no output, that means your needs *possibly* cannot be satisfied.
 
+If you cannot find older cuDNN version from conda channels (such as `-c nvidia`, `-c conda-forge`, `-c anaconda`, `-c main`), you can find archive packages [here](https://developer.nvidia.com/rdp/cudnn-archive).
+
 # Acknowledgement
 
 This repo is inherited from [https://github.com/moi90/pytorch_compute_capabilities](https://github.com/moi90/pytorch_compute_capabilities) of [Simon-Martin Schröder](https://github.com/moi90). I reuse the code `pytorch_compute_capabilities.py` to collect version constraints.
