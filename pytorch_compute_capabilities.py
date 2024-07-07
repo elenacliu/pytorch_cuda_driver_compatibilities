@@ -152,7 +152,7 @@ def main():
         if "cuda" not in p["build"]:
             continue
 
-        if "py3.6" not in p["build"] and "py3.7" not in p["build"] and "py3.8" not in p["build"] and "py3.9" not in p["build"] and "py3.10" not in p["build"]:
+        if "py3.6" not in p["build"] and "py3.7" not in p["build"] and "py3.8" not in p["build"] and "py3.9" not in p["build"] and "py3.10" not in p["build"] and "py3.11" not in p["build"] and "py3.12" not in p["build"]:
             continue
 
         pkg_archive_fns.append(pkg_archive_fn)
