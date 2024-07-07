@@ -167,6 +167,8 @@ def main():
     table = table.sort_values("package", key=natsort_keygen(), ascending=False)
     with open("table.md", "w") as f:
         table.to_markdown(f, tablefmt="github", index=False)
+    with open("table.csv", "w") as f:
+        table.to_csv(f, index=False)
 
     print("Done.")
 
