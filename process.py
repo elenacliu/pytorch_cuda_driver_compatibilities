@@ -9,7 +9,8 @@ cur = conn.cursor()
 
 def create_table(table_name):
     if table_name == 'pytorch':
-        cur.execute(f'CREATE TABLE IF NOT EXISTS {table_name}(pytorch, python, cuda, cudnn, sm, driver)')
+        cur.execute(f'DROP TABLE IF EXISTS {table_name}')
+        cur.execute(f'CREATE TABLE {table_name}(pytorch, python, cuda, cudnn, sm, driver)')
 
 def insert_csv_to_table(table_name, csv_name):
     df = pd.read_csv(csv_name)
