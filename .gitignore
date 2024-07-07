@@ -2,5 +2,7 @@
 repodata.json
 */filelist.txt
 .venv/
+venv/
 *.tar.bz2
 pytorch-/*
+__pycache__
